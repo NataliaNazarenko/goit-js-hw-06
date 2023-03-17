@@ -1,11 +1,11 @@
 const inputEl = document.getElementById('name-input');
-const titleEl = document.getElementById('name-output');
+const spanEl = document.getElementById('name-output');
 
 inputEl.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
-  if (event.currentTarget.value === '') {
-    titleEl.textContent = 'Anonymous';
+  if (event.currentTarget.value.trim() === '') {
+    return spanEl.textContent;
   }
-  titleEl.textContent = event.currentTarget.value;
+  spanEl.textContent = event.currentTarget.value;
 }
