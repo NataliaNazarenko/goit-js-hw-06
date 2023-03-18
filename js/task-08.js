@@ -10,8 +10,7 @@ function onFormSubmit(event) {
   const formData = { email, password };
 
   if (email === '' || password === '') {
-    const message = 'Please fill in all the fields!';
-    return alert(message);
+    return alert('Please fill in all the fields!');
   }
 
   console.log(formData);
